@@ -37,8 +37,10 @@ endif
 
 highlight Tabs ctermbg=red guibg=red
 highlight TrailingSpaces ctermbg=lightred guibg=lightred
-let m1=matchadd('Tabs', '	')
-let m2=matchadd('TrailingSpaces', ' \+$')
+if !exists('w:trailingSpaces') | let w:trailingSpaces=matchadd('TrailingSpaces', ' \+$') | endif
+if !exists('w:tabs') | let w:tabs=matchadd('Tabs', '	') | endif
+autocmd WinEnter * if !exists('w:trailingSpaces') | let w:trailingSpaces=matchadd('TrailingSpaces', ' \+$') | endif
+autocmd WinEnter * if !exists('w:tabs') | let w:tabs=matchadd('Tabs', '	') | endif
 
 " Show list of buffers using leader key (default \)b
 nnoremap <leader>b :Buffers<CR>
