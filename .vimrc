@@ -13,6 +13,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'junegunn/fzf.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
