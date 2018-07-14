@@ -101,3 +101,6 @@ alias gitlog='git log --oneline --color=always | head'
 alias gitgraph='git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"'
 export EDITOR=vim
 PROMPT='$USER%{$fg[blue]%}@%{$reset_color%}%M %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}%{$reset_color%}'
+
+alias whatismyip="curl -s -A'Test' -L whatismyip.com | grep 'IPv4 is'"
+alias whatismyipaddress="curl -s -A'Test' -L whatismyipaddress.com | grep IPv4: | grep -o '>[^<]*..<'"

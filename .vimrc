@@ -12,6 +12,7 @@ Plugin 'haya14busa/incsearch.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'junegunn/fzf.vim'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,3 +54,5 @@ nnoremap <leader>a :Ag<CR>
 nnoremap <A-b> :Make<cr>
 nnoremap <A-n> :cn<CR>
 nnoremap <A-p> :cp<CR>
+
+set viminfo^=%
